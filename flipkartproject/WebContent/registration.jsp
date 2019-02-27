@@ -7,15 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="path" method="post">
+<form action="registrationservlet", method="post">
 <br>
 UserId:<input type="text" name="UserId"/>
 <br>
 Password:<input type="password" name="Password"/>
 <br>
-<input type="submit" value="Login"/>
-</form>
+EmailId:<input type="email" name="EmailId"/>
 <br>
-<a href="registration.jsp">New User:Register</a>
+MobileNumber:<input type="number" name="MobileNumber"/>
+<break>
+<input type="submit"/>
 </body>
 </html>
