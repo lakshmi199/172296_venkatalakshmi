@@ -6,7 +6,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Cart {
+public class Cart 
+{ 
+	
 public boolean add(String Username,String Brand,String Price,String Storage) throws SQLException, ClassNotFoundException {
 		 
 			Class.forName("oracle.jdbc.driver.OracleDriver");  
