@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="index.html"><h1>login successful</h1></a>
+<a href="billing.html"><h1>login successful</h1></a>
 </body>
 </html>

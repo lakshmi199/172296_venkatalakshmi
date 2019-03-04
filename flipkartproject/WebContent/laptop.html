@@ -21,8 +21,14 @@
   <br>
   <td>Email:sony@flipkart.com</td>
   <br>
-   <button type = "button" class = "btn btn-default" >Addto cart</button>
+   <a href="Addtocart.html"><button type = "button" class = "btn btn-default" >Addto cart</button></a>
    <br>
    <a href="login.jsp"><button type = "button" class = "btn btn-default">BuyNow</button></a>
- </body>
+   <form action="Cart" method="post">
+   <input type="hidden" name="Brand" value="Sonylaptop">
+   <input type="hidden" name="Price" value="53,155">
+    <input type="hidden" name="Storage" value="64bit">
+  <input type="submit" value="AddtoCart">
+  </form>
+    </body>
 </html>
