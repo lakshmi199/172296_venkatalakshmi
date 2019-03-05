@@ -1,6 +1,12 @@
 package com.core;
 
-public class Customer {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class Customer implements InitializingBean,DisposableBean,ApplicationContextAware {
 
 
 	private int customerId;
@@ -45,7 +51,28 @@ public class Customer {
 		System.out.println("customerAddress:" +getCustomerAddress().getStreet() +getCustomerAddress().getCity() +getCustomerAddress().getState() +getCustomerAddress().getZip() +getCustomerAddress().getCountry());
 		
 	}
-	
+	@Override
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Destroyed Customer");
+	}
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Hi customer");
+	}
+		public void myInit()
+		{
+			System.out.println("MyInit() called...");
+		}
+		public void myCleanUp() {
+			System.out.println("Cleaned...");
+		}
+		@Override
+		public void setApplicationContext(ApplicationContext context) throws BeansException {
+			System.out.println("ApplicationContextAware invoked....");
+			System.out.println(context);
+		}
 
 	
 }
