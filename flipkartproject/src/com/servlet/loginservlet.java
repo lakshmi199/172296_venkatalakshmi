@@ -25,6 +25,7 @@ public class loginservlet extends HttpServlet {
 		String UserId,Password;
 		UserId=request.getParameter("UserId");
 		Password=request.getParameter("Password");
+		
 		LogInService loginservice=new LogInService();
 		boolean result=loginservice.authenticate(UserId,Password);
 		if(result) {

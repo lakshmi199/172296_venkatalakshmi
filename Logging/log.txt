@@ -1,0 +1,5 @@
+
+Mar 07, 2019 11:10:15 AM com.capgemini.loggerfile.MainLogClass main
+SEVERE: Severe
+Mar 07, 2019 11:45:37 AM com.capgemini.loggerfile.MainLogClass main
+SEVERE: Severe
