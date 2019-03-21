@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <script>
+
+function minMaxLengthAverage(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  const len = arr.length;
+
+  const ave = arr => arr.reduce((acc, curVal) => acc + curVal, 0) / len;
+  const average = ave(arr);
+
+  return [min, max, len, average];
+}
+console.log(minMaxLengthAverage([7, 13, 3, 77, 100]));
+
+</script>
+
+	</body>
+
+</html>
